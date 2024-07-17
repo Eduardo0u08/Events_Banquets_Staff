@@ -1,0 +1,29 @@
+/* Estilo para imágenes del carousel con fondo semi-transparente */
+.carousel-item img {
+    position: relative;
+  }
+  body{
+    background-color: black;
+
+  }
+
+  .carousel-item img::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(37, 77, 129, 0.3); /* Fondo semi-transparente negro */
+  }
+  
+  /* Estilo para las tarjetas con fondo de papel viejo */
+  .card {
+    background-image: url("\static\images\Papel_viejo.png");
+    background-size: cover;
+    border: 1px solid #7b3c3c; /* Borde para destacar el efecto de papel */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    padding: 20px; /* Espaciado interior */
+  }
+  
